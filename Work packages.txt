@@ -14,4 +14,5 @@ Front end
 - add a product to cart
 - remove product to crt
 - go to check out page to get a detailed view of the cart
-
+ 
+ 
