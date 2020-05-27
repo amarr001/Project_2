@@ -1,3 +1,7 @@
+Design work
+- 
+
+Back end
 - Set up file structure
 - Write app.js and routes
 - Create database
