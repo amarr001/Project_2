@@ -1,0 +1,54 @@
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #303030;
+}
+
+.logo-row {
+    height: 80px;
+}
+
+.logo {
+    background-image: url("assets/logo.png");
+    margin-top: 18px;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cart {
+    background-image: url("assets/cart_item_added.png");
+    margin-top: 22px;
+    margin-left: 23px;
+    height: 38px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cart_item {
+    z-index: 6;
+    margin-left: 34px;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}
+
+.nav-link {
+    padding: 19px 17px 0 17px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* Media queries. */
+
+/* not working yet */
+@media only screen and (max-width: 768px) {
+    .devices {
+        display: none;
+    }
+}
