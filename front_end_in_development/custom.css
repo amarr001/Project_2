@@ -1,3 +1,12 @@
+/* Bootstrap override. */
+
+.container-fluid {
+padding-left: 0;
+padding-right: 0;
+}
+
+
+/* Main css */
 body {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -135,13 +144,26 @@ body { font-family: sans-serif; }
 }
 
 .filter-field {
-    height: 130px;
+    min-height: 130px;
     margin-top: 70px;
+    margin-bottom: 20px; 
 }
 
 .purple {
     color: rgb(59, 27, 63);
 }
+
+
+/* mobile hero panel products page. */
+.hero {
+    height: 450px;
+    margin: 0 auto;
+    background-image: url("assets/hero_mid.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
 
 
 /* Filter fields. */
@@ -152,7 +174,7 @@ body { font-family: sans-serif; }
 
 /* Product cards */
 .product-card {
-    max-width: 230px;
+    max-width: 360px;
     background-color: #fff;
     border-color: #909090;
     border-style: solid;
@@ -161,8 +183,8 @@ body { font-family: sans-serif; }
 }
 
 .product-new {
-    height: 35px;
-    max-width: 230px;
+    height: 38px;
+    max-width: 360px;
     background-color: #fff;
     border-color: #9c2aa0;
     border-style: solid;
@@ -173,8 +195,8 @@ body { font-family: sans-serif; }
 }
 
 .product-new-placeholder {
-    height: 35px;
-    max-width: 240px;
+    height: 38px;
+    max-width: 360px;
     background-color: #fff;
     margin: 0 auto;
 }
@@ -233,7 +255,7 @@ ul {
 /* Products dropdown */
 .dropdown-item {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -244,7 +266,7 @@ ul {
 
 .filter-button {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     border-radius: 0;
 }
@@ -252,15 +274,72 @@ ul {
 
 
 footer {
-    height: 500px;
+    min-height: 400px;
+    background-color: #3a3a3a;
+}
+
+.footer-list {
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style-type: none;
+    color: #909090;
+}
+
+.footer-heading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 /* Media queries. */
 
-/* not working yet */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
     .devices {
+        display: none;
+    }
+
+    .carousel-visible {
+        display: none;
+    }
+
+    .hero {
+        height: 500px;
+        background-image: url("assets/hero.jpg");
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-field {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .devices {
+        display: none;
+    }
+
+    .carousel-visible {
+        display: none;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .hero {
         display: none;
     }
 }
