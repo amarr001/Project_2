@@ -7,6 +7,9 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- boostrapCDN css for burger menu -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- boostrapCDN css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -14,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&display=swap"
         rel="stylesheet">
+    <!-- Fontawesome for burger menu -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <!-- custom styles -->
@@ -29,7 +34,7 @@
 
 <body>
 
-    <!-- Header lg and xl device sizes. -->
+    <!-- Main navigation bar. -->
     <header class="devices">
         <div class="container-fluid">
 
@@ -44,7 +49,6 @@
                             </div>
                         </a>
                     </div>
-
 
                     <div class="col-sm-9 col-md-9 col-lg-9 col-xl-8">
                         <ul class="nav d-flex justify-content-center justify-content-md-end">
@@ -73,12 +77,69 @@
     </header>
 
 
+    <!-- Responsive nav bar. -->
+    <header class="mobile">
+        <div class="container-xl">
+
+            <div class="row p-3">
+
+                <div class="col-6">
+
+                    <!-- Navbar brand. -->
+                    <a href="index.html">
+                        <div class="logo-mobile">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col d-flex justify-content-end">
+
+                    <!-- Cart icon. -->
+                    <div class="cart" href="cart.html">
+                        <a class="text-white cart_item">2</a>
+                    </div>
+
+                </div>
+
+                <div class="col d-flex justify-content-end">
+                    <!-- Burger button. -->
+                    <button class="navbar-toggler toggler-example burger-mobile" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                        aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars fa-1x"></i></button>
+                </div>
+
+                <!-- Collapsible content. -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                    <!-- Links. -->
+                    <ul class="nav d-flex flex-column justify-content-start text-center p-4">
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main.html">Shop phones</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/deals_and_bundles">Deals &
+                                Bundles</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="products_main/hot_offers">Hot Offers</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-dark mt-1" href="contact.htm">About</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
 
 
+        </div>
+    </header>
+    <!--/ Navbar.-->
 
 
-    <!-- TODO add- responsive header and burger menu. -->
-
+    <!-- Carousel. -->
     <div class="carousel-visible">
 
         <!-- Flickity HTML init. -->
@@ -205,7 +266,7 @@
     <!-- product-cards. -->
     <div class="container-xl">
 
-        <div class="row">
+        <div class="row p-3">
 
             <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 mt-4 mb-4">
                 <div class="product-new-placeholder pt-2 pl-3">
@@ -468,6 +529,7 @@
         crossorigin="anonymous"></script>
     <!-- Flickity JS for carousel -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
 </body>
 

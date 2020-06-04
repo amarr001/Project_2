@@ -67,6 +67,17 @@ p {
     cursor: pointer;
 }
 
+.logo-mobile {
+    background-image: url("assets/logo.png");
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 46px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .cart {
     background-image: url("assets/cart_item_added.png");
     margin-top: 14px;
@@ -91,6 +102,26 @@ p {
     font-size: 20px;
     font-weight: 600;
 }
+
+
+/*  burger menu  */
+.fa-1x {
+    font-size: 14px;
+}
+
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+
+.index-image {
+    background-image: url("assets/logo.png");
+    width: 290px;
+    margin-top: 14px;
+    height: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 
 
 /* Flickity carousel  */
@@ -163,7 +194,6 @@ body { font-family: sans-serif; }
     background-repeat: no-repeat;
     background-position: bottom right;
 }
-
 
 
 /* Filter fields. */
@@ -260,8 +290,9 @@ ul {
 }
 
 .dropdown-menu {
-    left: 12px;
+    left: 5%;
     border-radius: 0;
+    width: 90%;
 }
 
 .filter-button {
@@ -301,8 +332,7 @@ footer {
 }
 
 
-/* Media queries. */
-
+/* Media queries MAX. */
 @media only screen and (max-width: 576px) {
     .devices {
         display: none;
@@ -316,11 +346,19 @@ footer {
         height: 500px;
         background-image: url("assets/hero.jpg");
     }
+
+    .logo-mobile {
+        background-image: url("assets/logo-marque.png");
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .filter-field {
         display: none;
+    }
+
+    .hero {
+        min-height: 550px;
     }
 }
 
@@ -336,10 +374,49 @@ footer {
     .hero {
         min-height: 450px;
     }
+
+    .cart {
+        margin-top: 6px;
+        margin-left: 0px;
+        width: 52px;
+        position: relative;
+    }
+
+    .cart_item {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 35px;
+        font-weight: 600;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 16px;
+    }
+
+    .fa-1x {
+        font-size: 22px;
+    }
+
+    .navbar-toggler {
+        padding: 8px 10px 8px 10px;
+
+    }
+
+    .burger-mobile {
+        margin-top: 0px;
+    }
+
+    .nav-link {
+        font-size: 26px;
+    }
+    
 }
 
+/* Media queries MIN. */
 @media only screen and (min-width: 993px) {
     .hero {
+        display: none;
+    }
+    
+    .mobile {
         display: none;
     }
 }
