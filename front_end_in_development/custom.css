@@ -201,6 +201,11 @@ body { font-family: sans-serif; }
     border-left: 1px solid #909090;
 }
 
+.card {
+    border: none;
+    margin-top: 3px;
+}
+
 
 /* Product cards */
 .product-card {
@@ -302,6 +307,22 @@ ul {
     border-radius: 0;
 }
 
+.collapse-button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+.collapse-item {
+    font-size: 28px;
+}
+
+.collapse-category{
+    color: #303030;
+    font-weight: 400;
+}
+
 
 
 footer {
@@ -330,6 +351,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 
 /* Media queries MAX. */
@@ -419,4 +441,12 @@ footer {
     .mobile {
         display: none;
     }
+
 }
+
+@media only screen and (min-width: 769px) {
+    .filter-collapse {
+        display: none;
+    }
+}
+
