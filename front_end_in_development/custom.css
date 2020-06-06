@@ -388,7 +388,7 @@ ul {
     cursor: pointer;
 }
 
-.purple {
+.purple-circle {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -402,7 +402,7 @@ ul {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: #b1a365;
+    background-color: #ffe785;
     margin-right: 8px;
     margin-bottom: 8px;
     cursor: pointer;
@@ -658,7 +658,7 @@ footer {
         margin-bottom: 12px;
     }
     
-    .purple {
+    .purple-circle {
         height: 50px;
         width: 50px;
         margin-right: 12px;
