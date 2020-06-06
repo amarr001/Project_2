@@ -52,6 +52,7 @@ h6 {
 p {
     font-size: 16px;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-link {
@@ -221,7 +222,7 @@ body { font-family: sans-serif; }
 
 /* Product cards */
 .product-card {
-    max-width: 340px;
+    max-width: 320px;
     background-color: #fff;
     border-color: #909090;
     border-style: solid;
@@ -231,7 +232,7 @@ body { font-family: sans-serif; }
 
 .product-new {
     height: 38px;
-    max-width: 340px;
+    max-width: 320px;
     background-color: #fff;
     border-color: #9c2aa0;
     border-style: solid;
@@ -243,7 +244,7 @@ body { font-family: sans-serif; }
 
 .product-new-placeholder {
     height: 38px;
-    max-width: 340px;
+    max-width: 320px;
     background-color: #fff;
     margin: 0 auto;
 }
@@ -301,8 +302,12 @@ ul {
     min-height: 210px
 }
 
+.single-product-features {
+    min-height: 100px
+}
 
-/* Sinlge product cards */
+
+/* Single product cards */
 .single-product-card {
     max-width: 900px;
     background-color: #fff;
@@ -311,6 +316,98 @@ ul {
     border-width: 1px;
     margin: 0 auto;
 }
+
+.black {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #3f3f3f;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.white{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: #909090 solid 1px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.silver {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(0.10turn, #6d6d6d, #e9e9e9);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.gold {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: linear-gradient(0.10turn, #e9be00, #fff89c);
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.red {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #d44141;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.green {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #7cb981;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.blue {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #759aa5;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.purple {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #8e6fa7;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.yellow {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #b1a365;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
 
 
 
@@ -475,6 +572,12 @@ footer {
         font-weight: 700;
     }
 
+    p {
+        font-size: 21px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
     .new {
         font-size: 18px;
     }
@@ -505,11 +608,79 @@ footer {
     .btn-lg-text {
         font-size: 26px;
     }
+    
+    .black {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .white{
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .silver {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .gold {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .red {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .green {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .blue {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .purple {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .yellow {
+        height: 50px;
+        width: 50px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+
+    .main-img {
+        height: 420px;
+        margin-bottom: 50px;
+    }
 
 }
 
 /* Media queries MIN. */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) {
     .hero {
         display: none;
     }
