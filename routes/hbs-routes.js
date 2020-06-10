@@ -8,48 +8,49 @@ var db = require("../models");
 
 
 module.exports = function(app) {
-  app.get("/", function(req, res) {
+
+  app.get("/", function(req, res, next) {
 
     db.model.findAll({
-      include: [db.brand]
+      include:[db.brand, db.product]
     })
-    then(function(model){
-      var modeldata = model.values;
-      modeldata.model = model.map(function(model){ return model.toJSON() });
-      var model = modeldata.model
-      res.render("index",{model})
-      console.log(model)
-  
-      })
-})
 
-app.get("/product", function(req, res) {
+    .then(function(data){
 
-  db.brand.findAll({
-    
-  })
-  .then(function(){
-    
-      res.render("product")
+        var branddata = data.values;
+       
+        branddata.data = data.map(function(data){ return data.toJSON() });
         
+        var data = branddata.data
+        
+        res.render("index",{data})
+        console.log(data);
+       
+      })     
     })
-})
-}
 
-/* app.get("/", function(req, res) {
-  db.brand.findAll({})
-  .then(function(brand){
-      var branddata = brand.values;
-      branddata.brand = brand.map(function(brand){ return brand.toJSON() });
-      var brand = branddata.brand
-      res.render("index",{brand})
-      console.log(brand);
-      console.log(dbmodel);
-  })*/
+      app.get("/api/product/:id", function(req, res) {
 
-  /*.then(function(model){
-    var modeldata = model.values;
-    modeldata.model = model.map(function(model){ return model.toJSON() });
-    var model = modeldata.model
-    res.render("index",{model})
-    console.log(model);*/ 
+        db.model.findAll({
+          where: {
+           local_model_id: req.params.id
+          },
+          include: [db.brand, db.product]
+
+
+        }).then(function(data){
+
+          var branddata = data.values;
+         
+         branddata.data = data.map(function(data){return data.toJSON() });
+          
+          var data = branddata.data
+          
+          res.render("product",{data})
+          console.log(data);
+
+        })
+         
+        });
+  }
+

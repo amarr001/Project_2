@@ -10,5 +10,16 @@ module.exports = function(sequelize, DataTypes) {
       freezeTableName: true
     }
     );
+
+   ModelImages.associate = model => {
+      ModelImages.belongsTo(model.model,{
+          foreignKey:'local_model_id',
+          sourceKey: 'image_url'
+          //sourceKey: 'id'
+      })
+  }
+  
+
+
     return ModelImages;
   };

@@ -5,7 +5,7 @@ module.exports = {
     /*
      Author : Udara Ranasinghe
     */
-   return queryInterface.createTable('Brand', { 
+   return queryInterface.createTable('brand', { 
 
     id:{
       type: Sequelize.INTEGER(11),
@@ -19,6 +19,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-      return queryInterface.dropTable('Brand');
+      return queryInterface.dropTable('brand');
   }
 };

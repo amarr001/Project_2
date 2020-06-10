@@ -11,5 +11,11 @@ module.exports = function(sequelize, DataTypes) {
       freezeTableName: true
     }
     );
+    Product.associate = model => {
+      Product.belongsTo(model.model,{
+          foreignKey:'local_model_id',
+          sourceKey: 'price'
+      })
+  }
     return Product;
   };
