@@ -10,6 +10,8 @@ Upon loading of the web application it will display different phones available i
 
 # Link to Deployed Application
 
+[View here](https://lodafoneproject.herokuapp.com/)
+
 # Desktop Screenshots
 
 # Mobile Screenshots
