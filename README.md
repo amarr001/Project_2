@@ -12,10 +12,6 @@ Upon loading of the web application it will display different phones available i
 
 [View here](https://lodafoneproject.herokuapp.com/)
 
-# Desktop Screenshots
-
-# Mobile Screenshots
-
 # Credits
 
 HTML & CSS by Benedict Cole & Nathan Teakle 
